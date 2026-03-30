@@ -1,0 +1,91 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portafolio de Proyectos</title>
+  <meta
+    name="description"
+    content="Landing page simple para presentar proyectos de GitHub de forma clara y amigable para reclutadores."
+  >
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&family=Public+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="site-frame">
+    <header class="site-header">
+      <div class="page-shell topbar">
+        <span class="brand">Luca Camus</span>
+        <div class="topbar-links">
+          <a class="top-link" href="https://github.com/lucacamus13" target="_blank" rel="noreferrer">GitHub</a>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero page-shell">
+        <div class="hero-kicker-row">
+          <p class="eyebrow">Portafolio de proyectos</p>
+          <p class="hero-note">Economia, datos, research y automatizacion aplicada</p>
+        </div>
+
+        <div class="hero-grid">
+          <div class="hero-main">
+            <h1>Proyectos desarrollados para mostrar criterio analitico, capacidad tecnica y comunicacion clara.</h1>
+            <p class="hero-copy">
+              Esta pagina presenta una seleccion de trabajos construidos para resolver problemas reales en finanzas,
+              macroeconomia, business intelligence y analisis de datos. El objetivo es ofrecer una vista mas clara,
+              ordenada y accesible que un listado de repositorios en GitHub.
+            </p>
+            <div class="hero-actions">
+              <a class="button button-primary" href="#projects-grid">Explorar proyectos</a>
+              <a class="button button-secondary" href="https://github.com/lucacamus13" target="_blank" rel="noreferrer">Ver perfil en GitHub</a>
+            </div>
+          </div>
+
+          <aside class="hero-panel">
+            <p class="panel-label">En esta pagina</p>
+            <div class="panel-item">
+              <span class="panel-value">9</span>
+              <span class="panel-text">proyectos seleccionados</span>
+            </div>
+            <div class="panel-item">
+              <span class="panel-value">4</span>
+              <span class="panel-text">areas principales: research, data, BI y macro</span>
+            </div>
+            <div class="panel-item">
+              <span class="panel-value">1</span>
+              <span class="panel-text">objetivo: traducir analisis en decisiones utiles</span>
+            </div>
+          </aside>
+        </div>
+      </section>
+
+      <section class="projects-section page-shell">
+        <div class="projects-grid" id="projects-grid"></div>
+      </section>
+    </main>
+  </div>
+
+  <template id="project-card-template">
+    <article class="project-card">
+      <div class="project-card-top">
+        <p class="project-type"></p>
+        <h3></h3>
+      </div>
+      <p class="project-description"></p>
+      <div class="tag-list"></div>
+      <div class="project-links">
+        <a class="button button-small button-primary project-detail">Ver detalle</a>
+        <a class="button button-small button-secondary project-repo" target="_blank" rel="noreferrer">Repositorio</a>
+        <a class="button button-small button-secondary project-demo" target="_blank" rel="noreferrer">Demo</a>
+      </div>
+    </article>
+  </template>
+
+  <script src="projects-data.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

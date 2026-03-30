@@ -1,0 +1,47 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Detalle del proyecto</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&family=Public+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="project.css">
+</head>
+<body>
+  <div class="site-frame">
+    <header class="site-header">
+      <div class="page-shell topbar">
+        <a class="brand-link" href="index.html">Luca Camus</a>
+        <div class="topbar-links">
+          <a class="top-link" href="index.html">Volver al portafolio</a>
+          <a class="top-link repo-link" href="#" target="_blank" rel="noreferrer">Repositorio</a>
+        </div>
+      </div>
+    </header>
+
+    <main class="page-shell project-layout">
+      <section class="project-hero">
+        <p class="eyebrow" id="project-type"></p>
+        <h1 id="project-title"></h1>
+        <p class="project-summary" id="project-description"></p>
+        <div class="tag-list" id="project-tags"></div>
+        <div class="hero-actions">
+          <a class="button button-primary repo-link" href="#" target="_blank" rel="noreferrer">Ver repositorio</a>
+          <a class="button button-secondary demo-link" href="#" target="_blank" rel="noreferrer">Ver demo</a>
+        </div>
+      </section>
+
+      <section class="readme-shell">
+        <div class="readme-status" id="readme-status">Cargando README del proyecto...</div>
+        <article class="readme-content" id="readme-content"></article>
+      </section>
+    </main>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+  <script src="projects-data.js"></script>
+  <script src="project.js"></script>
+</body>
+</html>
