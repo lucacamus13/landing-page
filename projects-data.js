@@ -120,7 +120,7 @@ La version publicada permite ver el producto en funcionamiento, mientras que el 
     repoUrl: "https://github.com/lucacamus13/FinSentiment",
     readmeUrl: "https://raw.githubusercontent.com/lucacamus13/FinSentiment/main/README.md",
     branch: "main",
-    demoUrl: ""
+    demoUrl: "https://finsentiment-ea47aa9cvbntthd6w2lahm.streamlit.app/"
   },
   {
     id: "chile-monetary-policy",
