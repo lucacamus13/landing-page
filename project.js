@@ -43,13 +43,26 @@ if (!project) {
     }
   });
 
-  if (project.readmeUrl) {
+  if (project.publicContent) {
+    renderPublicContent(project.publicContent);
+  } else if (project.readmeUrl) {
     loadReadme(project);
   } else {
     statusElement.textContent = project.demoUrl
       ? "Este proyecto se comparte mediante una demo publica. El codigo fuente permanece privado."
       : "No hay documentacion publica disponible para este proyecto.";
   }
+}
+
+function renderPublicContent(markdown) {
+  const html = marked.parse(markdown.replace(/^\uFEFF/, ""), {
+    mangle: false,
+    headerIds: true
+  });
+
+  readmeElement.innerHTML = html;
+  readmeElement.classList.add("is-visible");
+  statusElement.remove();
 }
 
 async function loadReadme(projectItem) {

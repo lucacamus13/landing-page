@@ -5,6 +5,21 @@
     type: "Web App / Producto financiero",
     description:
       "Aplicacion web orientada a visualizar informacion de mercado en una interfaz clara y accesible. Este proyecto se comparte mediante una demo publica para mostrar la experiencia del producto sin exponer el codigo fuente.",
+    publicContent: `
+## Resumen
+
+Market Platform es una aplicacion web pensada para presentar informacion de mercado en una interfaz simple, visual y facil de explorar. El foco del proyecto estuvo en construir una experiencia clara para consultar datos relevantes sin friccion y con una estructura orientada a la toma de decisiones.
+
+## Que muestra la demo
+
+- Navegacion clara y estructura visual enfocada en usabilidad.
+- Presentacion ordenada de informacion financiera y de mercado.
+- Enfoque en experiencia de usuario, legibilidad y rapidez de consulta.
+
+## Alcance del proyecto
+
+La version publicada permite ver el producto en funcionamiento, mientras que el codigo fuente se mantiene privado. El objetivo de compartir esta demo es mostrar el criterio de producto, la ejecucion visual y la capacidad de transformar una idea en una aplicacion web navegable.
+`,
     tags: ["Web App", "Finanzas", "Producto", "Dashboard", "Vercel"],
     repoUrl: "",
     readmeUrl: "",
