@@ -18,7 +18,11 @@ PROJECTS.forEach((project) => {
   detailLink.href = `project.html?id=${project.id}`;
 
   const repoLink = card.querySelector(".project-repo");
-  repoLink.href = project.repoUrl;
+  if (project.repoUrl) {
+    repoLink.href = project.repoUrl;
+  } else {
+    repoLink.classList.add("is-hidden");
+  }
 
   const demoLink = card.querySelector(".project-demo");
   if (project.demoUrl) {

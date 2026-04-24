@@ -235,6 +235,7 @@ body {
   margin: 28px 0;
 }
 
+.repo-link.is-hidden,
 .demo-link.is-hidden {
   display: none;
 }

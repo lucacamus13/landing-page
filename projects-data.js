@@ -1,5 +1,17 @@
 ﻿const PROJECTS = [
   {
+    id: "marketplatform",
+    title: "Market Platform",
+    type: "Web App / Producto financiero",
+    description:
+      "Aplicacion web orientada a visualizar informacion de mercado en una interfaz clara y accesible. Este proyecto se comparte mediante una demo publica para mostrar la experiencia del producto sin exponer el codigo fuente.",
+    tags: ["Web App", "Finanzas", "Producto", "Dashboard", "Vercel"],
+    repoUrl: "",
+    readmeUrl: "",
+    branch: "main",
+    demoUrl: "https://marketplatformv03.vercel.app/"
+  },
+  {
     id: "neoscore",
     title: "NeoScore - Behavioral Credit Scoring",
     type: "Data / Machine Learning",

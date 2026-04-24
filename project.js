@@ -28,7 +28,11 @@ if (!project) {
   });
 
   repoLinks.forEach((link) => {
-    link.href = project.repoUrl;
+    if (project.repoUrl) {
+      link.href = project.repoUrl;
+    } else {
+      link.classList.add("is-hidden");
+    }
   });
 
   demoLinks.forEach((link) => {
@@ -39,7 +43,13 @@ if (!project) {
     }
   });
 
-  loadReadme(project);
+  if (project.readmeUrl) {
+    loadReadme(project);
+  } else {
+    statusElement.textContent = project.demoUrl
+      ? "Este proyecto se comparte mediante una demo publica. El codigo fuente permanece privado."
+      : "No hay documentacion publica disponible para este proyecto.";
+  }
 }
 
 async function loadReadme(projectItem) {
